@@ -1,7 +1,5 @@
 # Team Helble: WACC for Delta Air Lines Inc
 
-> **CEO:** fill in every `<...>` below, then commit this file to `main`. It's the plan everyone (and every agent) works from.
-
 ## The question
 
 What is Delta Air Lines Inc (DAL)'s weighted average cost of capital, and what does it mean for the hurdle rate on its new projects?

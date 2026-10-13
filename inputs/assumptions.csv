@@ -1,7 +1,7 @@
 item,value,source
-rf,0.04,"TODO (analyst): e.g. the 10-year Treasury yield on FRED (DGS10) as of a date you name"
-mrp,0.05,"TODO (analyst): market risk premium; say where it comes from and why"
-rd,0.055,"TODO (analyst): pre-tax cost of debt; e.g. yield on the firm's bonds or interest expense / total debt"
-tax,0.21,"TODO (analyst): tax rate; statutory or effective (income tax expense / pretax income)"
-w_e,0.70,"TODO (analyst): market cap / (market cap + total debt)"
-w_d,0.30,"TODO (analyst): total debt / (market cap + total debt)"
+rf,0.0522,"10-year Treasury constant-maturity yield, 5.22% on 2026-10-08 (latest on FRED as of 2026-10-13). FRED series DGS10: https://fred.stlouisfed.org/series/DGS10"
+mrp,0.042,"Damodaran implied equity risk premium for the S&P 500 at the start of October 2026: 4.20% (column ERP (T12m with sustainable payout), row 2026-10-01). Measured against the 10-year T-bond, so it matches rf. https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPbymonth.xlsx"
+rd,0.0616,"ICE BofA BBB US Corporate Index effective yield, 6.16% on 2026-10-12 (FRED series BAMLC0A4CBBBEY): https://fred.stlouisfed.org/series/BAMLC0A4CBBBEY. Uses Delta's investment-grade BBB-range rating as a proxy for its marginal borrowing cost. Cross-check: TTM net interest expense 600m / total debt 12,851m = 4.67% (Q3 2026 10-Q and FY2025 10-K)"
+tax,0.249,"Trailing-12-month effective tax rate = income tax expense / pre-tax income = 1,092m / 4,381m (9M 2026 from Q3 2026 10-Q plus Q4 2025 = FY2025 10-K minus 9M 2025). Alternatives: 21% federal statutory; FY2025 effective 19.1%. https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000027904&type=10-Q"
+w_e,0.804,"Market cap / (market cap + total debt) = 52,705m / 65,556m. Market cap = 657,912,380 shares (cover page of Q3 2026 10-Q, filed 2026-10-09) x $80.11 close on 2026-10-12 (Yahoo Finance, DAL)"
+w_d,0.196,"Total debt / (market cap + total debt) = 12,851m / 65,556m. Total debt at 2026-09-30 = noncurrent debt and finance leases 9,527m + current maturities of debt and finance leases 3,324m (balance sheet, Q3 2026 10-Q). Book value; operating leases excluded"
